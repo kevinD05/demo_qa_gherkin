@@ -63,6 +63,6 @@ def step_impl(context):
     button.click()
     time.sleep(4)
 
-@step(u'validar modulo text box y Rellenar formulario')
+@step(u'validar modulo text box y que se guarden los datos del formulario') 
 def step_impl(context):
   time.sleep(4)

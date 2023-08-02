@@ -19,44 +19,37 @@ def step_impl(context):
 
 @step(u'cargue la pagina, damos click al boton text box')
 def step_impl(context):
-    driver = get_driver(context)
-    btn_text_box = driver.find_element(By.XPATH, '//*[@id="item-0"]/span')
-    btn_text_box.click()
-    time.sleep(3)
+   driver = get_driver(context)
+   btn_text_box = driver.find_element(By.XPATH, '//*[@id="item-0"]/span')
+   btn_text_box.click()
+   time.sleep(3)
 
-@step(u'validar que nos mande el formulario de la text box')
+@step(u'mande el formulario de la text box')
 def step_impl(context):
     time.sleep(2)
 
-
-@step(u'que estoy en la página de registro')
-def step_impl(context):
-    time.sleep(1)
-
-
-@step(u'ingresar full name "usuario123"')
-def step_impl(context):
+@step(u'ingresar full name "{name}"')
+def step_impl(context, name):
     driver = get_driver(context)
     name = driver.find_element(By.XPATH, '//*[@id="userName"]')
     name.send_keys('usuario123')
     time.sleep(2)
 
-
-@step(u'ingresar email "usuario@example.com"')
-def step_impl(context):
+@step(u'ingresar email "{email}"')
+def step_impl(context, email):
     driver = get_driver(context)
     email = driver.find_element(By.XPATH, '//*[@id="userEmail"]')
     email.send_keys('usuario@example.com')
     time.sleep(2)
 
-@step(u'ingresar current addres')
+@step(u'ingresar current address')
 def step_impl(context):
     driver = get_driver(context)
     current = driver.find_element(By.XPATH, '//*[@id="currentAddress"]')
     current.send_keys('direccion 12345')
     time.sleep(2)
 
-@step(u'ingresar permanet addres')
+@step(u'ingresar permanent address')
 def step_impl(context):
     driver = get_driver(context)
     permanet = driver.find_element(By.XPATH, '//*[@id="permanentAddress"]')
@@ -70,7 +63,6 @@ def step_impl(context):
     button.click()
     time.sleep(4)
 
-
-@step(u'esperar que todo se haya aguardado')
+@step(u'validar modulo text box y Rellenar formulario')
 def step_impl(context):
-    time.sleep(5)
+  time.sleep(4)

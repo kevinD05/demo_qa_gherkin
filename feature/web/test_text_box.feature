@@ -14,5 +14,5 @@ Feature: Validamos escenario text box
       And ingresar email "usuario@example.com"
       And ingresar current addres 
       And ingresar permanet addres
-      and dar clic en el boton submit
+      And dar clic en el boton submit
       Then esperar que todo se haya aguardado

@@ -11,3 +11,12 @@ LUIS = {
     "currentAddress": "fghfghfghfh",
     "permanentAddress": "tyutyjyjyjgj"
 }
+
+Chester ={ 
+    'Firstname': "Chester",
+    'Lastname': "Diaz",
+    'email': "Chester@gmail.com",
+    'Age': "20",
+    'Salary': "500",
+    'Department': "Testing"
+}

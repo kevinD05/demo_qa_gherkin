@@ -41,3 +41,5 @@ class Basepage():
         WebDriverWait(self.browser, 10).until(
         EC.element_to_be_clickable(element)
     )
+    
+    

@@ -3,7 +3,7 @@ Feature: Validamos escenario text box
 
   @test_text_box
   Scenario: Ingresar modulo text box y que se guarden los datos del formulario
-    Given ingresamos a la url
+    Given Ingresamos a la url "URL_QA"
     When cargue la pagina, damos click al boton text box
     And mande el formulario de la text box
     And ingresar full name "usuario123"

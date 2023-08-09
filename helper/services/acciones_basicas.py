@@ -66,3 +66,22 @@ class Basepage():
                 link.click()
             except:
                 print(f"El elemento {element} no existe")
+
+    def click_button_and_return(self, element):
+        try:
+            self.ventana_principal = self.browser.current_window_handle
+            
+            elemento = self.browser.find_element(*element)
+            elemento.click()
+
+            time.sleep(2)
+
+            for ventana in self.browser.window_handles:
+                if ventana != self.ventana_principal:
+                    self.browser.switch_to.window(ventana)
+                    break
+
+           
+            self.browser.switch_to.window(self.ventana_principal)
+        except:
+            print("El elemento no existe o hubo un problema al manejar ventanas")

@@ -20,3 +20,12 @@ Chester ={
     'Salary': "500",
     'Department': "Testing"
 }
+
+Kira = {
+     'fisrtname': 'kira',
+     "lastname": 'diaz',
+     'email': 'kira@gmail.com',
+     'Mobile': '55635781',
+     'Subjects': 'developer',
+     'Currentadress': 'managua123'
+}

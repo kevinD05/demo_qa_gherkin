@@ -3,6 +3,7 @@ from helper.pages.page_text_box import pageTextBox
 from helper.pages.page_web_tables import Pagewetable
 from helper import usuarios
 from helper.pages.page_forms import pagepracticeforms
+from helper.pages.page_login_user import pagelogin
 import time
 
 class formsDemoQA(Basepage):
@@ -24,7 +25,6 @@ class formsDemoQA(Basepage):
         self.browser.find_element(*pageTextBox.input_current_address).send_keys(self.select_user(user)['currentAddress'])
         self.browser.find_element(*pageTextBox.input_permanent_address).send_keys(self.select_user(user)['permanentAddress'])
     
-
 class formswebtbables(Basepage):
 
     def select_table(self, user):
@@ -58,3 +58,18 @@ class practiceform(Basepage):
         self.browser.find_element(*pagepracticeforms.input_mobil).send_keys(self.select_forms(user)['Mobile'])
         self.browser.find_element(*pagepracticeforms.input_Subjects).send_keys(self.select_forms(user)['Subjects'])    
         self.browser.find_element(*pagepracticeforms.input_Current_Address).send_keys(self.select_forms(user)['Currentadress'])
+
+class login_user(Basepage):
+
+    def select_user(self, user):
+        if user == 'luna':
+            return usuarios.luna
+        else:
+            print('el usuario no existe')
+
+    def login(self, user):
+
+        self.browser.find_element(*login_user.fisrt_name).send_keys(self.select_user(user)['firstname'])
+        self.browser.find_element(*login_user.last_name).send_keys(self.select_user(user)['lastname'])
+        self.browser.find_element(*login_user.user_name).send_keys(self.select_user(user)['username'])
+        self.browser.find_element(*login_user.password).send_keys(self.select_user(user)['password'])

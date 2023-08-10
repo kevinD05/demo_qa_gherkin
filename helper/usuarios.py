@@ -29,3 +29,10 @@ Kira = {
      'Subjects': 'developer',
      'Currentadress': 'managua123'
 }
+
+luna = {
+    'fistname': 'luna',
+    'lastname': 'diaz',
+    'username': 'maya',
+    'password': '122334'
+}

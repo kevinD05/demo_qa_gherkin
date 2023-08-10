@@ -2,6 +2,8 @@ import time
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+
 
 class Basepage():
     
@@ -85,3 +87,16 @@ class Basepage():
             self.browser.switch_to.window(self.ventana_principal)
         except:
             print("El elemento no existe o hubo un problema al manejar ventanas")
+
+class SliderHandler:
+    def __init__(self, driver):
+        self.driver = driver
+
+    def drag_slider_to_position(self, slider_selector, position_percentage):
+        self.driver.get('https://demoqa.com/slider')
+        slider = self.driver.find_element (By.XPATH, '//*[@id="sliderContainer"]/div[1]/span/div')
+        slider_width = slider.size['width']
+        action_chains = ActionChains(self.driver)
+        desired_position = slider_width * (position_percentage / 100)
+        action_chains.click_and_hold(slider).move_by_offset(desired_position, 0).release().perform()
+

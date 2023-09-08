@@ -1,6 +1,7 @@
 @Elements_web_tables
 Feature:Validamos escenario radio button
 
+@web_table
 Scenario: Validar que se envien los datos del formulario, editar datos del formulario, eliminar datos del formulario
     Given Ingresamos a la url "URL_QA"
     When cargue la pagina, damos click al boton "Elements"

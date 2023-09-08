@@ -1,6 +1,7 @@
 @Elements_buttons
 Feature:Validamos escenario Buttons
 
+@button
 Scenario: Validar botones del Radio button
   Given Ingresamos a la url "URL_QA"
     When cargue la pagina, damos click al boton "Elements"

@@ -2,8 +2,8 @@ from selenium.webdriver.common.by import By
 
 class pagepracticeforms(object):
 
-    btn_forms = (By.XPATH, '//*[@id="app"]/div/div/div[2]/div[1]/div/div/div[2]/span/div')
-    btn_practice_fomr = (By.XPATH, '//*[@id="item-0"]')
+    btn_forms = (By.XPATH, '//h5[text()="Forms"]')
+    btn_practice_fomr = (By.XPATH, '//span[text()="Practice Form"]')
     input_name = (By.XPATH, '//*[@id="firstName"]')
     input_last_name = (By.XPATH, '//*[@id="lastName"]')
     input_email = (By.XPATH, '//*[@id="userEmail"]')

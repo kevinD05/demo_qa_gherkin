@@ -10,11 +10,15 @@ def step_impl(context):
     url = os.getenv('URL_QA')
     context.browser.get(url)
     time.sleep(3)
+    context.browser.execute_script('window.scrollTo(0, 430)')
+    time.sleep(1)
+
 
 @step(u'cargue la pagina, damos click al boton "Elements"')
 def step_impl(context):
     Basepage.click_button(context, PageDemoQA.btn_elements)
-    time.sleep(7)
+    context.browser.execute_script('window.scrollTo(0, 420)')
+    time.sleep(3)
 
 @step(u'validos que nos mande a las opcions de elementos')
 def step_impl(context):

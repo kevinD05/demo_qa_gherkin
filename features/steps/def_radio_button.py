@@ -7,8 +7,7 @@ import time
 @step(u'damos click al boton "Radio button"')
 def step_impl(context):
     Basepage.click_button(context, Pageradiobutton.btn_radio_button)
-    time.sleep(2)
-
+    time.sleep(10)
 
 @step(u'daremos click en el boton "yes"')
 def step_impl(context):
@@ -16,7 +15,7 @@ def step_impl(context):
     time.sleep(2)
 
 
-@step(u'daremos click en el boton "Impressive\'')
+@step(u'daremos click en el boton "Impressive"')
 def step_impl(context):
     Basepage.click_button(context, Pageradiobutton.btn_impressive)
     time.sleep(2)

@@ -1,6 +1,7 @@
 @Elements_Dynamic_properties
 Feature: Validamos escenario Dynamic_properties
 
+@dynamic
 Scenario:Validar dar click en los links
     Given Ingresamos a la url "URL_QA"
     When cargue la pagina, damos click al boton "Elements"

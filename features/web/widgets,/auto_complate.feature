@@ -1,6 +1,7 @@
 @widgets_auto_complate
 Feature: Validamos auto complate
 
+@auto
 Scenario:Validar botones de alerta
     Given Ingresamos a la url "URL_QA"
     When cargue la pagina, damos click al boton "Widgets"

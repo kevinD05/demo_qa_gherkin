@@ -2,8 +2,8 @@ from selenium.webdriver.common.by import By
 
 class Pagecheckbox(object):
      
-     btn_check_box = (By.XPATH, '//span[text()="Checke Box"]')
-     btn_mas = (By.XPATH, '//*[@id="tree-node"]/div/button[1]/svg')
-     rct_checkbox = (By.XPATH, '//*[@id="tree-node"]/ol/li/span/label/span[1]')
-     btn_menos = (By.XPATH, '//*[@id="tree-node"]/div/button[2]/svg')
+     btn_check_box = (By.XPATH, '//*[@id="item-1"]')
+     btn_mas = (By.XPATH, '//button[@class="rct-option rct-option-expand-all"]')
+     rct_checkbox = (By.XPATH, '//span[@class="rct-checkbox"]')
+     btn_menos = (By.XPATH, '//button[@class="rct-option rct-option-collapse-all"]')
      message = (By.XPATH, '//*[@id="result"]')

@@ -1,6 +1,7 @@
 @book_store_login
 Feature: Validamos registrar nuevo usuario
 
+@login
 Scenario:Validar rellenar formalario de nuevo usuario
     Given Ingresamos a la url "URL_QA"
     When cargue la pagina, damos click al boton "book store"

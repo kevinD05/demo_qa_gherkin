@@ -12,14 +12,17 @@ def step_impl(context):
 @step(u'damos click al boton "color change"')
 def step_impl(context):
     Basepage.click_button(context, pagedynamic.btn_change_color)
+    time.sleep(6)
 
-@step(u'esperaremos 5 segundos hasta que el boton \'will enable 5 seconds" sea visible y daremos click')
+@step(u'esperaremos 5 segundos hasta que el boton \'will enable 5 seconds sea visible y daremos click\'')
 def step_impl(context):
     Basepage.click_button(context, pagedynamic.btn_enable)
+    time.sleep(3)
 
 @step(u'damos click en el boton "visible after 5 seconds" despues de 5 segundos')
 def step_impl(context):
     Basepage.click_button(context, pagedynamic.btn_after)
+    time.sleep(4)
 
 @step(u'Validamos que al dar click en los botones el cortono cambie')
 def step_impl(context):

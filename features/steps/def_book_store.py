@@ -38,7 +38,7 @@ def step_click_add_button(context):
 def step_click_book2(context):
     Basepage.click_button(context, pagebookstore.book2)
 
-#@step(u'damos click al boton \'add to your collection\'')
+@step(u'damos click al boton \'add to your collection\'')
 def step_click_add_button_2(context):
     Basepage.click_button(context, pagebookstore.btn_add)
 

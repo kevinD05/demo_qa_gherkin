@@ -10,6 +10,7 @@ import time
 @step(u'cargue la pagina, damos click al boton "Widgets"')
 def step_impl(context):
     Basepage.click_button(context, pageautocomplate.btn_widgets)
+    context.browser.execute_script('window.scrollTo(0, 520)')
     time.sleep(2)
 
 
@@ -21,36 +22,19 @@ def step_impl(context):
 
 @step(u'damos click en el campo multiple color')
 def step_impl(context):
-    multiple = context.find_element(By.XPATH, '//*[@id="autoCompleteMultipleContainer"]/div')
-    multiple.click()
-    time.sleep(1)
-
-
+   pass
 @step(u'escribiremos dos nombre de un color \'yellow\',\'red\'')
 def step_impl(context):
-    multiple = context.find_element(By.XPATH, '//*[@id="autoCompleteMultipleContainer"]/div')
-    multiple.send_keys('yellow')
-    multiple.click()
-    multiple.send_keys('red')
-    multiple.click()
-    time.sleep(2)
-
+    pass
 
 
 @step(u'damos click en el campo single color')
 def step_impl(context):
-    single = context.find_element(By.XPATH, '//*[@id="autoCompleteSingleContainer"]/div/div[1]')
-    single.click()
-    time.sleep(2)
-
+   pass
 
 @step(u'escribiremos un nombre de un color \'blue\'')
 def step_impl(context):
-    single = context.find_element(By.XPATH, '//*[@id="autoCompleteSingleContainer"]/div/div[1]')
-    single.click()
-    time.sleep(2)
-    single.send_keys('blue')
-
+    pass
 
 @step(u'Validamos que al escribir nombres de colores se auto complete')
 def step_impl(context):

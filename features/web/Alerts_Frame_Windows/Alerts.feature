@@ -1,6 +1,7 @@
 @Alerts_frame_alerst
 Feature: Validamos escenario Alerts
 
+@alert
 Scenario:Validar botones de alerta
     Given Ingresamos a la url "URL_QA"
     When cargue la pagina, damos click al boton "Alerts, Frame & Windows"

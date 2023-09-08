@@ -1,7 +1,8 @@
 @widgets_data_picker
 Feature: Validamos data picker
 
-Scenario:Validar botones de alerta
+@data
+Scenario:Validar data picker
     Given Ingresamos a la url "URL_QA"
     When cargue la pagina, damos click al boton "Widgets"
     And damos click al boton 'data picker'

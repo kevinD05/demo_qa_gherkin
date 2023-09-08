@@ -3,7 +3,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-
+from helper.pages.page_element import PageDemoQA
 
 class Basepage():
     
@@ -88,6 +88,16 @@ class Basepage():
         except:
             print("El elemento no existe o hubo un problema al manejar ventanas")
 
+    def skip_publicidad(self):
+        
+        banner = PageDemoQA.publicidad
+
+        if banner == True:
+            self.browser.execute_script('window.scrollTo(0, 300)')
+        else:
+            pass
+
+
 class SliderHandler:
     def __init__(self, driver):
         self.driver = driver
@@ -99,4 +109,5 @@ class SliderHandler:
         action_chains = ActionChains(self.driver)
         desired_position = slider_width * (position_percentage / 100)
         action_chains.click_and_hold(slider).move_by_offset(desired_position, 0).release().perform()
+
 

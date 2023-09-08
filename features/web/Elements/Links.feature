@@ -1,6 +1,7 @@
 @Elements_Links
 Feature: Validamos escenario Links
 
+@links
 Scenario:Validar dar click en los links
     Given Ingresamos a la url "URL_QA"
     When cargue la pagina, damos click al boton "Elements"

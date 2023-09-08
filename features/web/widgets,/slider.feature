@@ -1,6 +1,7 @@
 @widgets_slider
 Feature: Validamos slider
 
+@slider
 Scenario:Validar mover el slider
     Given Ingresamos a la url "URL_QA"
     When cargue la pagina, damos click al boton "Widgets"

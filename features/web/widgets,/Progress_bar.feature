@@ -1,6 +1,7 @@
 @widgets_Progress_Bar
 Feature: Validamos Progress Bar
 
+@progress_bar
 Scenario:Validar que la barra de progresso llegue ala mitad
     Given Ingresamos a la url "URL_QA"
     When cargue la pagina, damos click al boton "Widgets"

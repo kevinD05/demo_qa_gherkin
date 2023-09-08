@@ -1,6 +1,7 @@
 @Forms_practice_forms
 Feature: Validamos escenario practice forms
 
+@forms
 Scenario: Validar rellenar formulario correctamente del modulo practice forms
     Given Ingresamos a la url "URL_QA"
     When cargue la pagina, damos click al boton "Forms"
